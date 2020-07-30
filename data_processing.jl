@@ -1,4 +1,4 @@
-## 数据来源 https://tianchi.aliyun.com/competition/entrance/231573
+## 数据来源 https://tianchi.aliyun.com/competition/entrance/231573/introduction
 
 ## 加载包
 using DataFrames,CSV
@@ -26,4 +26,3 @@ T=1:427
 
 Out_Data=DataFrame(date_order=1:427,Date=Date,purchase=purchase,redeem=redeem)
 CSV.write("Data.csv",Out_Data)
-
