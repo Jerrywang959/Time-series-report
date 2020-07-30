@@ -2,7 +2,6 @@
 
 ## 加载包
 using DataFrames,CSV
-gr()
 ## 设置文件路径
 data_raw_path="/home/jerrywang/Desktop/user_balance_table.csv"
 
@@ -25,5 +24,6 @@ end
 
 T=1:427
 
-CSV.write("Data.csv",DataFrame([Date purchase redeem]))
+Out_Data=DataFrame(date_order=1:427,Date=Date,purchase=purchase,redeem=redeem)
+CSV.write("Data.csv",Out_Data)
 
