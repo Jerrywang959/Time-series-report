@@ -1,8 +1,11 @@
-insheet using Data.csv
+insheet using Data.csv, clear
+ge date1=mdy(7,1,2013)+_n-1
+format date1 %td
+tsset date1
 gen lpurchase=ln(purchase)
 gen lredeem=ln(redeem)
-tsset date_order
 
+tsappend,add 
 
 
 \\AR(1) 模型
